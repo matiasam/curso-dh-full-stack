@@ -23,4 +23,6 @@ app.listen(3030, () => {
     console.log('-----------------------------------------------')
 })
 
-app.listen(process.env.port || 3000, () => console.log('Server running in 3030 port'));
+app.listen(process.env.port || 3000, function() {
+    console.log('Servidor Corriendo')
+})
