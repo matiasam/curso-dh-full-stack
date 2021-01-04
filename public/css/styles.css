@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: #FFF159;
+    padding: 20px 10px;
+}
+
+div.top-header{
+    padding-top: -10%;
+    display: flex;
+    width: 100%;
+}
+
+header .logo{
+    width: 10%;
+    padding-left: 150px;
+    float: left;
+    margin-bottom:10px;
+}
+
+header .search{
+    padding-left: 25px;
+    float: left;
+    text-align: center;
+}
+
+
+header .menu{
+    column-count: 5;
+    column-gap: 175px;
+    padding:10px;
+    padding-top: 20px;
+    font-weight: lighter;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: black;
+    font-size: small;
+}
+
+a:link {
+    color: grey;
+    text-decoration: none;
+  }
+
+a:visited {
+    color: grey;
+    text-decoration: none;
+}
+
+header nav{
+    font-size: 15px;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    float: bottom;
+    padding: 10px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid rgb(156, 156, 156);
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 600px;
+    height: 25px;
+    padding-left: 10px;
+    padding-top: 7px;
+    border-radius: 10px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+h3{
+    font-size: 15px;
+}
+
+p{
+    font-size: 12px;
+}
+
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+    margin-top: 20px;
+}
+
+h4,
+.description{
+    display: none;
+}
+
+section.banner img{
+    width: 100%;
+    margin-top: -10px;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+    transition: all 0.5s
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article:hover {
+    box-shadow: 0 0 50px grey;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section article:hover i{
+    transform: rotate(-90deg);
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 769px){
+
+}
+
+@media (min-width: 480px){
+      
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+
+text-login {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    background-color: #0c0c0c;
+    padding: 5%;
+    text-align: center;
+}
